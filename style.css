@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#reasonline {
+  display: inline-block;
+    height: auto;
+  width: 280px;
+  background-color: brown;
+}
+
+#reasonline2 {
+  display: inline-block;
+    background-color: #ffffff;
+  padding: 40px;
+  width: 280px;
+  height: auto;
+}
+
+#reasonsection {
+  background-color: rgb(248, 243, 236);
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#reasontitle {
+  display: inline-block;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0, 0.10);
+  font-size: 40px;
+  font-family: Tinos;
+  color: #eee;
+  padding: 13px;
+  height: auto;
+  width: 280px;
+  background-color: brown;
+}
+
+#reasonpoint {
+  display: inline;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0, 0.10);;
+  background-color: #ffffff;
+  padding: 40px;
+  width: 280px;
+  height: auto;
+}
+
+#uniquesection {
+  background-color: rgb(248, 243, 236);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#uniquesection h2 {
+  font-family: Tinos;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#uniquesection p {
+  font-family: Reddit Sans;
+  font-weight: 700;
+  font-size: 18px;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+#linee {
+  height: 200px;
+  width: 100%;
+  background-color: brown;
+}
+
+#food {
+  padding: 40px 20px;
+  background-color: rgb(248, 243, 236);
+  min-height: 600px;
+}
+
+#foodcontainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#foodheader {
+  margin-left: 40px;  /* move right */
+  margin-top: 50px;   /* move down */
+  text-align: left;
+}
+
+#foodheader h2 {
+  font-size: 30px;
+  font-family: Tinos;
+}
+#foodheader p {
+  font-family: Reddit Sans;
+  font-size: 17px;
+  color: #2b2b2b;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+#menucontainer {
+  margin-left: 40px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menuitem {
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0, 0.10);
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 450px;
+  width: 350px;       /* keep it neat on desktop */
+  max-width: 100%;    /* but don’t break mobile */
+  box-sizing: border-box;            /* fixed box width */
+}
+
+.menuitem img {
+  display: block;
+  width: 100%;
+  height: auto;       /* fixed height */
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.menuitem h3 {
+  margin-bottom: 20px;
+}
+
+.menuitem p {
+  margin-bottom: 20px;
+}
+
+#bigline {
+  height: 190px;
+  width: 100%;
+  background: #222;
+}
+
+#media {
+  padding: 130px;
+  background-color: rgb(248, 243, 236);
+  width: 100%;
+}
+
+#titlespan {
+  font-family: Tinos;
+text-align: center;
+font-size: 30px;
+}
+
+#mediaspan {
+  font-family: Reddit sans;
+  font-weight: 700;
+  color: #2b2b2b; 
+  font-size: 20px;
+  display: block;
+  margin-top: 30px;
+}
+
+footer {
+  background: #222;  /* move the background here so it covers all */
+  color: #eee;
+  width: 100%;
+}
+
+#containerfooter {
+  justify-content: center;
+  display: flex;          
+  padding-top: 10px;
+  flex-wrap: wrap;
+  gap: 80px;
+  text-align: center;   /* center all footer content */
+  padding-bottom: 30px;
+}
+
+.footersection {
+  flex: 0 1 auto;
+  text-align: left;
+
+}
+
+.footersection h1 {
+  font-family: Tinos;
+  font-size: 20px;        /* make h1 inline */
+  margin-bottom: 20px;     /* space after h1 */
+  padding-top: 20px;
+}
+
+.footersection a, 
+.footersection p {
+  font-family: Reddit sans;
+  display: block;        /* keep links / text inline with h1 */
+  margin: 10px 0;
+  color: rgb(189, 203, 208);
+  flex-basis: 100%;
+  text-decoration: none;
+  text-align: left;
+  
+}
+
+.footersection p {
+  line-height: 2;
+}
+
+.footersection a:hover {
+  color: rgb(242, 244, 245);
+}
+
+#credit {
+  padding-top: 15px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  color: gray;
+  flex-basis: 100%;
+
+}
