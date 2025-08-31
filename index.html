@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200;1,200&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200;1,200&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>WeFood</title>
 </head>
 <body>
-    <header id="header">
+    <header>
 <div id="subheader">
 <h1 id="title">We<span id="subtitle">Food</span></h1> 
 <img src="">   
@@ -32,8 +33,7 @@
 <a id="maintext">Rasakan sensasi masakan khas Timur Tengah yang mewah, otentik, dan menggugah selera, dibalur dengan suasana yang bersahabat, cuma di Kebuli Musthofa</a>
 
 <div>
-<button>
-    <a><h3 href="#food">Lihat menu</h3> </a>
+<button onclick="location.href='#linee'" class="button">Lihat menu </a>
     </button>
 </div>
 </main>
@@ -54,8 +54,48 @@
 </div>
 
 <div id="uniquesection">
-<h2>Kenapa memilihi kami?</h2>
+<h2>Kenapa memilih kami?</h2>
 <p>bla bla bla bla bla bla bla bla blab alb alb alb al bla bl l al bababa</p>
+</div>
+
+<div id="review">
+    <div id="reviewheader">
+    <h2>Review Customer</h2>
+    <p> Review dari pelanggan kami yang sering mampir ke restoran kita</p>
+    </div>
+    <div id="reviewlist">
+    <div class="customer">
+        <h3>Orang cina aseli</h3>
+        <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+        <p>"Capcay di sini mengingatkan saya pada masakan kampung halaman, sangat menenangkan."</p>
+    </div>
+    <div class="customer">
+        <h3>Raja petir 777</h3>
+        <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+        <p>"NgeCapcay di sini porsinya mayan banyak, cocok buat makan bareng temen2. Bumbunya meresap banget, cuma kalau bisa agak ditambahin pedes dikit biar lebih gacor ⚡⚡⚡"</p>
+    </div>
+    <div class="customer">
+        <h3>Asep razzaq</h3>
+        <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+        <p>"Capcay terenak yg pernah ku coba di Jatinangor. Benerdah, tiap kali kesini pasti mesennya capcay trs (soalnya menunya itu doang 😂), worth it lah pokoknya"</p>
+    </div>
+    </div>
 </div>
 
 <div id="linee">
@@ -69,6 +109,7 @@
         <div id="foodheader">
     <h2>Menu kami</h2>
     <p id="foodp">Menu yang tersedia pada restoran kami</p>
+    <button onclick="location.href='contact.html'" class="button">Pesan sekarang</button>
         </div>
 
     <div id="menucontainer">
