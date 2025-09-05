@@ -12,11 +12,28 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   background-color: brown;
-  padding: 10px 10px;
+  padding: 10px 3px; 
 } 
 
+#subheader {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  
+}
+
+
+
+header img {
+  height: 40px;
+  width: auto;
+}
+
 #title {
+  margin-left: 10px;
   font-family: Tinos;
   color: #ffffff;
 }
@@ -26,18 +43,14 @@ header {
   color: rgb(247, 208, 157);
 }
 
-#subheader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #lines {
   display: none;
 }
 
 nav {
+  padding: 10px;
   display: flex;
+  justify-content: flex-end;
   gap: 20px;
 }
 
@@ -361,6 +374,7 @@ main::before{
 .menuitem p {
   font-family: Reddit Sans;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 #bigline {
@@ -451,6 +465,10 @@ footer {
 
 @media (max-width: 768px) {
 
+  header button {
+    margin: 10px;
+  }
+
   #lines {
     display: flex;
     flex-direction: column;
@@ -485,8 +503,6 @@ footer {
 
   #lines.switch span:nth-child(3) {
     transform: rotate(-45deg) translateX(3.7px) translateY(-5px) ;
-  }
-
   }
 
   #sidebar {
@@ -572,76 +588,11 @@ footer {
     font-size: 34px;
   }
 
- #reasontitle {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 28px;
-    text-align: left;
+  #reasonsection,
+  #reasontitle,
+  #reasonpoint {
+    display: none;
   }
-
-  #reasontitle span {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    transform: translateX(-100%);
-    opacity: 0;
-    animation: slideIn 0.6s ease forwards;
-  }
-
-  /* make them come one after another */
-  #reasontitle span:nth-child(1) { animation-delay: 0s; }
-  #reasontitle span:nth-child(2) { animation-delay: 0.3s; }
-  #reasontitle span:nth-child(3) { animation-delay: 0.6s; }
-
-  @keyframes slideIn {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  /* background wipe effect */
-  #reasontitle span::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: brown;  /* your accent color */
-    transform: translateX(-100%);
-    animation: wipeIn 0.6s ease forwards;
-  }
-
-  #reasontitle span:nth-child(1)::before { animation-delay: 0s; }
-  #reasontitle span:nth-child(2)::before { animation-delay: 0.3s; }
-  #reasontitle span:nth-child(3)::before { animation-delay: 0.6s; }
-
-  @keyframes wipeIn {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-  }
-
-  #reasonpoint ul {
-    padding-left: 20px;
-  }
-
-  #reasonpoint ul {
-    list-style-position: inside;
-    padding-right: 0px;
-    margin-right: 0px;
-  }
-
-
-
-
-
-
 
 
 
@@ -666,8 +617,6 @@ footer {
 
 #reviewheader p {
   display: none;
-  text-align: center;
-  font-size: 14px;
 }
 
 
@@ -707,4 +656,4 @@ footer {
     font-size: 12px;
     margin-bottom: 20px;
   }
-
+}
