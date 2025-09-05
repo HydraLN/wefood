@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200;1,200&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Reddit+Sans:ital,wght@0,200;1,200&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>WeFood</title>
 </head>
 <body>
@@ -16,14 +16,23 @@
 <h1 id="title">We<span id="subtitle">Food</span></h1> 
 <img src="">   
 
-<button id="lines">&#9776;</button>
+<button id="lines">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
 <!-- hide this nav and show it later-->
-<nav> 
+ <div id="overlay"></div>
+<nav id="sidebar"> 
+    <div id="sideclose">
+    <span></span>
+    <span></span>
+    </div>
     <a href="menu.html">Menu kita</a>
     <a href="contact.html">Kontak</a>
     <a href="about.html">Tentang kami</a>
 </nav>
-</div>
     </header>
 
 <main>
@@ -42,13 +51,19 @@
 
 <div id="reasonsection">
     <div id="reasonline"></div>
-<h2 id="reasontitle">Keunikan masakan kita</h2>
+<h2 id="reasontitle">
+    <span> Keunikan </span> 
+    <span> masakan </span>  
+    <span> kita</span></h2>
 
 
 <div id="reasonpoint">
-<p>point 1</p>
-<p>point 2</p>
-<p>point 3</p>
+<ul>
+    <li>point 1</li>
+<li>point 2</li>
+<li>point 3</li>
+</ul>
+
 </div>
 <div id="reasonline2"></div>
 </div>
@@ -109,7 +124,7 @@
         <div id="foodheader">
     <h2>Menu kami</h2>
     <p id="foodp">Menu yang tersedia pada restoran kami</p>
-    <button onclick="location.href='contact.html'" class="button">Pesan sekarang</button>
+    <button id="pesan" class="button">Pesan sekarang</button>
         </div>
 
     <div id="menucontainer">
@@ -156,18 +171,18 @@ Dapatkan informasi terbaru seputar menu, tips dan trik, serta promo dari kami!</
 </div>
    <div class="footersection">
    <h1>Jelajahi situs</h1>
-   <a href="#menu">Menu</a>
-    <a href="#tentangkami">Tentang kami</a>
+   <a href="#menu" class="footerleft">Menu</a>
+    <a href="#tentangkami" class="footerleft">Tentang kami</a>
 </div>
 <div class="footersection">   
     <h1>Media sosial</h1>
     <a href="#instagram">Instagram</a>
 </div>
     <div class="footersection">
-    <h1>Hubungi kami</h1>
+    <h1 class="footerleft">Hubungi kami</h1>
     <p>Jatinangor Town Square - JATOS <br> wednesdaycorp@gmail.com <br> 0882 2568 5261</p>
 </div>
-    <p id="credit">Wednesday Corp © 2025 | Dikembangkan oleh Raihan Aditya Pratista </p>
+    <p id="credit" class="footercredit">Wednesday Corp © 2025 | Dikembangkan oleh Raihan Aditya Pratista </p>
    </div>
 </footer>
 
