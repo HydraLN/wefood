@@ -1,0 +1,73 @@
+#mainimg {
+  position: relative;
+  width: 100%;
+  height: 300px;   /* or whatever you want */
+  overflow: hidden;
+}
+
+#mainimg img {
+  position: relative;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* make sure image fills */
+}
+
+#maintext {
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* perfectly center */
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+#reason {
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#containerfooter {
+  background: #222;     
+  color: #eee;          
+  padding: 20px;
+  height: auto;
+  width: auto;
+  text-align: center;   /* center all footer content */
+}
+
+.footersection {
+    vertical-align: top;
+  display: inline-block;  /* make each section sit side by side */
+  margin: 0 30px;         /* space between sections */
+}
+
+.footersection h1 {
+  font-size: 20px;
+  display: inline;        /* make h1 inline */
+  margin-right: 10px;     /* space after h1 */
+}
+
+.footersection a, 
+.footersection p {
+  display: block;        /* keep links / text inline with h1 */
+  margin-right: 10px;
+  color: lightblue;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+.footersection a:hover {
+  color: yellow;
+}
+
+#credit {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  color: gray;
+}
+
+
